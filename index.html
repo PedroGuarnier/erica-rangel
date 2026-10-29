@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Dra. Érica Rangel, psicóloga clínica e psicóloga de relacionamentos no Rio de Janeiro (CRP 05/56029). Atendimento presencial e online. Minicurso Como Vencer a Dependência Emocional.">
+<meta name="description" content="Há relações que nos fazem esquecer quem somos. Psicoterapia presencial no Rio de Janeiro e on-line com a Dra. Érica Rangel, psicóloga clínica (CRP 05/56029): relacionamentos abusivos, dependência emocional, reconstrução feminina, ansiedade e depressão.">
 <meta name="theme-color" content="#F5EEE5">
 <meta property="og:title" content="Dra. Érica Rangel · Psicóloga de Relacionamentos">
-<meta property="og:description" content="Para quem cansou de se perder dentro de uma relação. Psicologia clínica e dos relacionamentos, presencial no Rio e online.">
+<meta property="og:description" content="Psicoterapia presencial no Rio de Janeiro e on-line com a Dra. Érica Rangel, psicóloga clínica. Relacionamentos abusivos, dependência emocional, reconstrução feminina, ansiedade e depressão.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pedroguarnier.github.io/erica-rangel/">
-<meta property="og:image" content="https://pedroguarnier.github.io/erica-rangel/img/hero-studio.jpg">
+<meta property="og:image" content="https://pedroguarnier.github.io/erica-rangel/img/hero-glasses.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%237A5342%27/%3E%3Ctext x=%2732%27 y=%2744%27 text-anchor=%27middle%27 font-family=%27Georgia,serif%27 font-style=%27italic%27 font-size=%2734%27 fill=%27%23F5EEE5%27%3Eer%3C/text%3E%3C/svg%3E">
 <title>Dra. Érica Rangel</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,7 +86,7 @@ p{margin:0}
 .brand .er{font-family:var(--script);font-size:38px;line-height:1;color:var(--brown);margin-top:-6px}
 .brand b{display:block;font-family:var(--display);font-weight:400;font-size:17px;letter-spacing:.06em;text-transform:uppercase;line-height:1.1}
 .brand small{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-.nav-links{display:flex;gap:26px;font-size:14px;font-weight:400}
+.nav-links{display:flex;gap:22px;font-size:14px;font-weight:400;white-space:nowrap}
 .nav-links a{text-decoration:none;color:var(--muted)}
 .nav-links a:hover{color:var(--fg)}
 .nav .btn{padding:11px 18px;font-size:13px}
@@ -198,20 +198,6 @@ p{margin:0}
   .course .cta .btn{width:100%;justify-content:center}
 }
 
-/* Áreas */
-.areas{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.area{border-radius:24px;padding:clamp(26px,3.2vw,44px);min-width:0;display:flex;flex-direction:column;gap:18px}
-.area-clin{background:var(--surface);border:1px solid var(--line)}
-.area-rel{background:var(--blue-soft);border:1px solid transparent}
-.area h3{font-size:clamp(26px,2.6vw,34px)}
-.area .tag{align-self:flex-start;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--navy);background:var(--surface);padding:7px 12px;border-radius:999px}
-.area ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}
-.area li{display:grid;grid-template-columns:10px 1fr;gap:12px;align-items:start;font-size:16px;font-weight:400;padding:6px 0}
-.area li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--blue);margin-top:9px}
-.area p{color:var(--muted);font-size:15.5px}
-@media (max-width:860px){.areas{grid-template-columns:1fr}}
-@media (max-width:480px){.area ul{grid-template-columns:1fr}}
-
 /* Sobre */
 .about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,6vw,88px);align-items:center}
 .about-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0}
@@ -255,16 +241,35 @@ p{margin:0}
   .g2,.g4{grid-row:span 2}
 }
 
-/* FAQ */
-.faq{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px;max-width:1000px}
-.faq details{border-top:1px solid var(--line)}
-.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:18px 0;font-family:var(--display);font-size:21px;line-height:1.25}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--body);font-weight:300;font-size:26px;line-height:1;color:var(--blue-deep);flex:none}
-.faq details[open] summary::after{content:"–"}
-.faq details p{margin:-6px 0 18px;color:var(--muted);font-size:16px;max-width:30em}
-@media (max-width:760px){.faq{grid-template-columns:1fr}}
-
+/* Cards de atuação */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,2.4vw,30px);min-width:0}
+.card.alt{background:var(--blue-soft);border-color:transparent}
+.card h3{font-size:clamp(21px,1.9vw,24px);margin-bottom:10px}
+.card p{font-size:15.5px;color:var(--muted);line-height:1.55}
+.note{margin-top:18px;font-size:13.5px;color:var(--muted);max-width:62em;line-height:1.5}
+.sec-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:34px}
+.sec-cta small{color:var(--muted);font-size:14px}
+@media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.cards{grid-template-columns:1fr}.sec-cta .btn{width:100%;justify-content:center}}
+/* On-line */
+.online-close{margin-top:30px;font-family:var(--display);font-size:clamp(22px,2.2vw,28px);line-height:1.3;max-width:24em}
+/* Women’s texto */
+.wm-text{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);margin-top:clamp(28px,4vw,44px);align-items:start}
+.wm-text>*{min-width:0}
+.wm-text p{line-height:1.6}
+.wm-text p+p{margin-top:14px}
+.wm-text .quote{padding-left:22px;border-left:3px solid var(--blue);font-family:var(--display);font-size:clamp(22px,2.1vw,28px);line-height:1.3}
+.next{margin-top:clamp(28px,4vw,40px);background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,2.6vw,30px) clamp(22px,3vw,36px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px 28px}
+.next span{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.next b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(24px,2.4vw,32px);color:var(--navy);margin-top:4px;line-height:1.15}
+@media (max-width:760px){.wm-text{grid-template-columns:1fr}.next .btn{width:100%;justify-content:center}}
+/* Minicurso: o que você vai aprender */
+.course .sub{margin-top:14px;color:var(--muted);font-size:clamp(17px,1.5vw,19px);line-height:1.5}
+.learn{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+.learn li{display:grid;grid-template-columns:16px 1fr;gap:12px;align-items:start;font-size:16px;line-height:1.5}
+.learn li svg{width:16px;height:16px;stroke:var(--blue-deep);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:5px}
+@media (max-width:600px){.learn{grid-template-columns:1fr}}
 /* CTA final */
 .band-brown{background:var(--brown);color:var(--on-brown)}
 .band-brown .eyebrow{color:var(--on-brown-muted)}
@@ -309,11 +314,12 @@ footer .legal{border-top:1px solid var(--line);padding-block:16px;font-size:12.5
       <span><b>Érica Rangel</b><small>Psicóloga clínica<span class="crp-txt"> · CRP 05/56029</span></small></span>
     </a>
     <nav class="nav-links" id="navlinks" aria-label="Seções">
-      <a href="#atuacao">Atuação</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#minicurso">Minicurso</a>
+      <a href="#top">Início</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#psicoterapia">Psicoterapia</a>
+      <a href="#online">On-line</a>
       <a href="#women">Women’s Meeting</a>
-      <a href="#faq">Dúvidas</a>
+      <a href="#minicurso">Minicurso</a>
     </nav>
     <div class="nav-actions">
       <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1%2C%20Dra.%20%C3%89rica!%20Encontrei%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><span>Agendar</span><span class="arr" aria-hidden="true">→</span></a>
@@ -334,16 +340,16 @@ footer .legal{border-top:1px solid var(--line);padding-block:16px;font-size:12.5
 <section class="hero" id="top">
   <div class="wrap">
     <div class="hero-photo">
-      <img src="img/hero-studio.jpg" alt="Dra. Érica Rangel em retrato de estúdio, de terno preto, sentada em um banco alto" width="1000" height="1414">
+      <img src="img/hero-glasses.jpg" alt="Dra. Érica Rangel sorrindo em seu consultório, de óculos e blusa branca" width="739" height="738">
       <span class="crp">CRP 05/56029</span>
     </div>
     <div>
       <p class="eyebrow">Psicóloga clínica · Rio de Janeiro</p>
-      <h1>Para quem cansou de se perder dentro de uma relação.</h1>
-      <p class="lede">Psicoterapia para reconstrução emocional. Ansiedade, luto, dependência emocional e relações que machucam têm saída, e ela começa com uma conversa.</p>
+      <h1>Há relações que nos fazem esquecer quem somos.</h1>
+      <p class="lede">E há momentos em que precisamos de ajuda para nos reencontrar. A psicoterapia é um espaço para compreender a sua história, reconhecer padrões emocionais e construir novas maneiras de se relacionar consigo mesma e com os outros. Você não precisa enfrentar tudo sozinha.</p>
       <div class="ctas">
-        <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1%2C%20Dra.%20%C3%89rica!%20Encontrei%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar consulta <span class="arr" aria-hidden="true">→</span></a>
-        <a class="btn btn-line" href="#minicurso">Ver o minicurso</a>
+        <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1%2C%20Dra.%20%C3%89rica!%20Encontrei%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar minha consulta <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-line" href="#online">Psicoterapia on-line</a>
         <a class="btn btn-line" href="https://www.instagram.com/draericarangelpsi/" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg>Instagram</a>
       </div>
       <div class="facts">
@@ -353,60 +359,18 @@ footer .legal{border-top:1px solid var(--line);padding-block:16px;font-size:12.5
         </div>
         <div>
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg>
-          <span>Online</span><b>Via Meet</b>
+          <span>On-line</span><b>Por videochamada</b>
         </div>
         <div>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 19c0-3.3 2.7-6 6-6s6 2.7 6 6M15 18c.3-2.6 2.2-4.5 4.5-4.5 1 0 1.9.3 2.5.8"/></svg>
-          <span>Instagram</span><b>+7 mil seguidores</b>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg>
+          <span>Trajetória</span><b>Quase 10 anos</b>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="band band-2" id="atuacao">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">Áreas de atuação</p>
-      <h2>Clínica sólida e uma especialidade: os relacionamentos.</h2>
-      <p class="lede muted">Atendimento individual, com escuta cuidadosa e um plano que respeita o seu tempo. Presencial no Rio de Janeiro ou online, de onde você estiver.</p>
-    </div>
-    <div class="areas">
-      <div class="area area-clin">
-        <span class="tag">Psicologia clínica</span>
-        <h3>Para o que pesa por dentro.</h3>
-        <ul>
-          <li>Síndrome de ansiedade</li>
-          <li>TAG, ansiedade generalizada</li>
-          <li>Síndrome do pânico</li>
-          <li>Angústia</li>
-          <li>Depressão</li>
-          <li>Luto</li>
-          <li>TOC</li>
-          <li>Medos e fobias</li>
-        </ul>
-        <p>Psicoterapia individual, com acompanhamento contínuo e, quando necessário, diálogo com a psiquiatria.</p>
-      </div>
-      <div class="area area-rel">
-        <span class="tag">Psicologia dos relacionamentos</span>
-        <h3>Para quem se perdeu dentro de uma relação.</h3>
-        <ul>
-          <li>Separação e luto em vida</li>
-          <li>Dependência emocional</li>
-          <li>Baixa autoestima</li>
-          <li>Relacionamento abusivo</li>
-          <li>Narcisismo e manipulação</li>
-          <li>Ciúme e insegurança</li>
-          <li>Reconstrução emocional</li>
-          <li>Voltar a confiar em si</li>
-        </ul>
-        <p>É o trabalho que dá nome ao perfil da Dra. Érica: Psicóloga de Relacionamentos.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="band" id="sobre">
+<section class="band band-2" id="sobre">
   <div class="wrap about">
     <div class="about-photos">
       <img src="img/about-diplomas.jpg" alt="Dra. Érica Rangel em seu consultório, com os diplomas ao fundo" width="1080" height="1440" loading="lazy">
@@ -414,13 +378,115 @@ footer .legal{border-top:1px solid var(--line);padding-block:16px;font-size:12.5
       <img src="img/studio-jeans.jpg" alt="Retrato de Dra. Érica Rangel em estúdio" width="1032" height="1600" loading="lazy">
     </div>
     <div>
-      <p class="eyebrow">Sobre</p>
-      <h2>Dra. Érica Rangel</h2>
-      <p>Psicóloga clínica (CRP 05/56029), a Dra. Érica atende em consultório no Rio de Janeiro e online. Nos últimos anos, concentrou a prática em um tema que atravessa quase todas as queixas que chegam até ela: a forma como a gente se relaciona, e o quanto isso adoece ou cura.</p>
-      <p>Seu trabalho une a base da psicologia clínica, no cuidado com ansiedade, pânico, depressão, luto e TOC, com um olhar especializado para os relacionamentos: dependência emocional, abuso, narcisismo e os lutos que a vida impõe sem ninguém morrer.</p>
-      <p>Fora do consultório, criou o <a href="#women">Women’s Meeting</a>, vivências para mulheres que querem recomeçar em boa companhia. Já são quatro edições.</p>
-      <p class="quote">“Tudo isso pode ser muito desafiador e trazer sofrimento emocional. Eu quero te ajudar.”</p>
+      <p class="eyebrow">Sobre mim</p>
+      <h2>Uma escuta que vai além dos sintomas.</h2>
+      <p>Prazer, sou Érica Rangel. Psicóloga clínica, com quase uma década de trajetória na Psicologia, atuo a partir da escuta psicanalítica. Meu trabalho é voltado à compreensão dos vínculos humanos, dos conflitos emocionais e das experiências que atravessam nossas relações.</p>
+      <p>Atendo pessoas que enfrentam relacionamentos abusivos, dependência emocional, ansiedade, depressão, separações, luto e dificuldades ligadas à autoestima. Tenho especial interesse pelos processos de reconstrução feminina: quando uma mulher percebe que, ao longo de uma relação, deixou suas necessidades, seus desejos e a própria identidade em segundo plano.</p>
+      <p>Acredito em uma psicologia que acolhe sem julgamentos, respeita a singularidade de cada história e abre novas formas de compreender e viver as relações. Sou também idealizadora do <a href="#women">Women’s Meeting — Wellness Community</a>, uma comunidade dedicada ao bem-estar feminino.</p>
+      <p class="quote">“Meu compromisso é oferecer uma escuta ética, sensível e fundamentada no conhecimento psicológico.”</p>
       <p class="sig">Érica Rangel<small>Psicóloga clínica · CRP 05/56029</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="psicoterapia">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Psicologia clínica</p>
+      <h2>O que você tem vivido emocionalmente?</h2>
+      <p class="lede muted">Nem sempre o sofrimento aparece de maneira evidente. Às vezes, ele se manifesta no cansaço constante, na ansiedade, no medo de desagradar, na dificuldade de dizer não ou na sensação de não se reconhecer mais. A psicoterapia é um espaço para compreender essas experiências e elaborar aquilo que tem provocado sofrimento.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Relacionamentos abusivos e violência psicológica</h3>
+        <p>Atendimento para quem vive ou viveu relações marcadas por manipulação, humilhações, controle, intimidação e desvalorização emocional.</p>
+      </div>
+      <div class="card alt">
+        <h3>Dependência emocional</h3>
+        <p>Para quem tem dificuldade de se afastar de relações que provocam sofrimento, vive com medo do abandono ou percebe que sua estabilidade depende demais da presença e da aprovação do outro.</p>
+      </div>
+      <div class="card">
+        <h3>Reconstrução feminina</h3>
+        <p>Um trabalho voltado ao fortalecimento da autoestima, à recuperação da autonomia emocional e à reconstrução da identidade depois de experiências afetivas difíceis.</p>
+      </div>
+      <div class="card">
+        <h3>Ansiedade e depressão</h3>
+        <p>Acompanhamento para compreender e cuidar de sintomas emocionais que interferem na qualidade de vida, nos relacionamentos e nas atividades do dia a dia.</p>
+      </div>
+      <div class="card">
+        <h3>Separações e luto em vida</h3>
+        <p>Acolhimento para quem enfrenta o fim de uma relação, a perda de expectativas ou a dor de conviver com alguém que já não oferece a presença afetiva desejada.</p>
+      </div>
+      <div class="card alt">
+        <h3>Terapia Antiabuso</h3>
+        <p>Proposta de atendimento voltada às consequências emocionais de relacionamentos abusivos, com atenção à violência psicológica, à manipulação e à reconstrução da autonomia.</p>
+      </div>
+    </div>
+    <p class="note">“Terapia Antiabuso” é o nome que a Dra. Érica dá à sua proposta de atendimento para quem viveu relações abusivas. Não se trata de uma especialidade reconhecida pelo Conselho Federal de Psicologia, e sim de uma forma de organizar o trabalho clínico em torno desse tema.</p>
+    <div class="sec-cta">
+      <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1%2C%20Dra.%20%C3%89rica!%20Encontrei%20o%20seu%20site%20e%20gostaria%20de%20iniciar%20a%20psicoterapia." target="_blank" rel="noopener">Quero iniciar minha psicoterapia <span class="arr" aria-hidden="true">→</span></a>
+      <small>Atendimento presencial no Rio de Janeiro ou on-line.</small>
+    </div>
+  </div>
+</section>
+
+<section class="band band-2" id="online">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Psicoterapia on-line</p>
+      <h2>Sua saúde emocional merece espaço na sua rotina.</h2>
+      <p class="lede muted">Onde você estiver, existe a possibilidade de cuidar de si. A psicoterapia on-line oferece a comodidade de fazer as sessões sem deslocamentos, preservando a qualidade da escuta, o sigilo profissional e o compromisso ético do atendimento psicológico. Você pode participar de casa, do escritório ou de outro ambiente reservado, inclusive de outro país, observadas as condições profissionais aplicáveis ao local.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <h3>Sessões de cerca de 1 hora</h3><p>Atendimento individual, com horário previamente agendado e a mesma estrutura do presencial.</p>
+      </div>
+      <div class="step">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg>
+        <h3>Por videochamada</h3><p>Os encontros acontecem em um ambiente virtual adequado ao atendimento psicológico, com sigilo garantido.</p>
+      </div>
+      <div class="step">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+        <h3>Só o que você precisa</h3><p>Uma conexão estável com a internet e um lugar tranquilo, onde possa conversar com privacidade.</p>
+      </div>
+    </div>
+    <p class="online-close">A distância não precisa ser um obstáculo para o cuidado emocional.</p>
+    <div class="sec-cta">
+      <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1%2C%20Dra.%20%C3%89rica!%20Encontrei%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20psicoterapia%20on-line." target="_blank" rel="noopener">Agendar minha sessão on-line <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="women">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Women’s Meeting · Wellness Community</p>
+      <h2>Você tem reservado algum tempo para encontrar a si mesma?</h2>
+      <p class="lede muted">O Women’s Meeting nasceu do desejo de criar um espaço onde mulheres pudessem interromper, por algumas horas, as exigências da rotina e voltar a atenção para si mesmas. Mais do que um encontro, é uma experiência de bem-estar feminino, autoconhecimento e conexão humana.</p>
+    </div>
+    <div class="gallery">
+      <figure class="g8"><img src="img/wm-group.jpg" alt="Participantes do Women’s Meeting posam juntas no salão de madeira, com a Dra. Érica ao centro" loading="lazy"></figure>
+      <figure class="g2"><img src="img/wm-circle.jpg" alt="Mulheres de branco de mãos dadas ao redor de uma árvore florida" loading="lazy"></figure>
+      <figure class="g1"><img src="img/wm-hands.jpg" alt="Mãos unidas no centro de uma roda, cada pulso com uma rosa branca" loading="lazy"></figure>
+      <figure class="g9"><img src="img/wm-seated.jpg" alt="Duas participantes de branco acompanham a roda de conversa" loading="lazy"></figure>
+      <figure class="g3"><img src="img/wm-fire.jpg" alt="Ritual de recomeço: uma participante queima um papel na fogueira do jardim" loading="lazy"></figure>
+      <figure class="g4"><img src="img/wm-room.jpg" alt="Roda de conversa em um salão de madeira com lustre" loading="lazy"></figure>
+      <figure class="g6"><img src="img/wm-duo.jpg" alt="Dra. Érica e uma participante no jardim" loading="lazy"></figure>
+    </div>
+    <div class="wm-text">
+      <div>
+        <p>As vivências reúnem momentos de reflexão, escuta, partilha, atividades guiadas, experiências sensoriais e práticas de autocuidado. Cada edição é construída em torno de um tema que convida as participantes a olhar para suas histórias, seus vínculos e suas escolhas.</p>
+        <p>Já foram quatro edições. A última teve o tema “Eu sou o amor da minha vida”. Um encontro entre mulheres reais, com histórias reais.</p>
+      </div>
+      <p class="quote">“Porque ser inteira não é ser perfeita. É não precisar abandonar a si mesma para pertencer a algum lugar.”</p>
+    </div>
+    <div class="next">
+      <div>
+        <span>Próxima edição</span>
+        <b>5ª edição · 24 de abril de 2027</b>
+      </div>
+      <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1!%20Gostaria%20de%20participar%20da%205%C2%AA%20edi%C3%A7%C3%A3o%20do%20Women%27s%20Meeting%2C%20em%2024%20de%20abril%20de%202027." target="_blank" rel="noopener">Quero participar da próxima vivência <span class="arr" aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
@@ -432,17 +498,24 @@ footer .legal{border-top:1px solid var(--line);padding-block:16px;font-size:12.5
       <figcaption>Turma de 11 de novembro, ao vivo pelo Google Meet.</figcaption>
     </figure>
     <div>
-      <p class="eyebrow">Minicurso online</p>
+      <p class="eyebrow">Cursos e autoconhecimento</p>
       <h2>Como Vencer a Dependência Emocional</h2>
+      <p class="sub">Dependência emocional: quando amar o outro significa esquecer de si.</p>
       <h3>Você já...</h3>
       <ul class="checks">
-        <li>Pediu desculpas por algo que não fez, só para ficar tudo bem entre vocês?</li>
-        <li>Chorou escondida, prometendo a si mesma que não aceitaria aquilo novamente?</li>
-        <li>Passou a noite acordada, esperando uma mensagem ou tentando entender o silêncio do outro?</li>
-        <li>Deixou de dizer o que sentia, com medo de provocar uma briga ou ser abandonada?</li>
-        <li>Percebeu que estava sofrendo naquela relação, mas, mesmo assim, não conseguiu ir embora?</li>
+        <li>Permaneceu em uma relação mesmo sabendo que ela estava fazendo mal?</li>
+        <li>Sentiu medo de perder alguém a ponto de aceitar situações que ultrapassavam os seus limites?</li>
+        <li>Percebeu que seu humor, sua autoestima e sua tranquilidade dependiam da maneira como outra pessoa tratava você?</li>
       </ul>
-      <p class="then">Então, esse minicurso é para você.</p>
+      <p class="then">A dependência emocional pode transformar o medo do abandono em um sofrimento constante.</p>
+      <h3>O que você vai aprender</h3>
+      <ul class="learn">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Como identificar sinais de dependência emocional.</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Por que é tão difícil se afastar de determinadas relações.</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>A relação entre autoestima, medo do abandono e necessidade de aprovação.</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Como começar a estabelecer limites emocionais.</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Caminhos para desenvolver autonomia e relações mais saudáveis.</li>
+      </ul>
       <div class="specs">
         <div><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Quarta-feira</span><b>11/11</b></div>
         <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Horário</span><b>20h</b></div>
@@ -452,72 +525,9 @@ footer .legal{border-top:1px solid var(--line);padding-block:16px;font-size:12.5
         <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 19c0-3.3 2.7-6 6-6s6 2.7 6 6M15 18c.3-2.6 2.2-4.5 4.5-4.5 1 0 1.9.3 2.5.8"/></svg><span>Turma</span><b>20 vagas</b></div>
       </div>
       <div class="cta">
-        <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1%2C%20Dra.%20%C3%89rica!%20Gostaria%20de%20me%20inscrever%20no%20minicurso%20Como%20Vencer%20a%20Depend%C3%AAncia%20Emocional%2C%20do%20dia%2011%2F11." target="_blank" rel="noopener">Inscreva-se agora <span class="arr" aria-hidden="true">→</span></a>
-        <small>A inscrição é confirmada pelo WhatsApp. O link do Meet chega na véspera.</small>
+        <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1%2C%20Dra.%20%C3%89rica!%20Gostaria%20de%20me%20inscrever%20no%20minicurso%20Como%20Vencer%20a%20Depend%C3%AAncia%20Emocional%2C%20do%20dia%2011%2F11." target="_blank" rel="noopener">Quero me inscrever <span class="arr" aria-hidden="true">→</span></a>
+        <small>A inscrição é confirmada pelo WhatsApp. O curso tem caráter educativo e não substitui a psicoterapia individual.</small>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="band" id="como">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">Como funciona</p>
-      <h2>Não precisa saber explicar o que sente. O primeiro passo é só uma mensagem.</h2>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
-        <h3>Mande uma mensagem</h3><p>Pelo WhatsApp, você conta um pouco do que está acontecendo e combina o melhor horário.</p>
-      </div>
-      <div class="step">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-3.3 2.7-6 6-6M22 20c0-3.3-2.7-6-6-6M8 14h8"/></svg>
-        <h3>Primeira sessão</h3><p>Um encontro de acolhimento, para entender a sua história e o que você espera da terapia.</p>
-      </div>
-      <div class="step">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 15l2.5 2.5L16 12"/></svg>
-        <h3>Processo terapêutico</h3><p>Sessões regulares, presenciais ou online, com um plano pensado para você e no seu ritmo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="band band-2" id="women">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">Wellness community · quatro edições</p>
-      <h2>Women’s Meeting</h2>
-      <p class="lede muted">Vivências profundas e dinâmicas proporcionadas para mulheres: roda de conversa, rituais de recomeço e muita troca. Já são quatro edições. A última teve o tema “Eu sou o amor da minha vida”.</p>
-    </div>
-    <div class="gallery">
-      <figure class="g8"><img src="img/wm-group.jpg" alt="Participantes do Women’s Meeting posam juntas no salão de madeira, com a Dra. Érica ao centro" loading="lazy"></figure>
-      <figure class="g2"><img src="img/wm-circle.jpg" alt="Mulheres de branco de mãos dadas ao redor de uma árvore florida" loading="lazy"></figure>
-      <figure class="g1"><img src="img/wm-hands.jpg" alt="Mãos unidas no centro de uma roda, cada pulso com uma rosa branca" loading="lazy"></figure>
-      <figure class="g9"><img src="img/wm-seated.jpg" alt="Duas participantes de branco acompanham a roda de conversa" loading="lazy"></figure>
-      <figure class="g3"><img src="img/wm-fire.jpg" alt="Ritual de recomeço: uma participante queima um papel na fogueira do jardim" loading="lazy"></figure>
-      <figure class="g4"><img src="img/wm-room.jpg" alt="Roda de conversa em um salão de madeira com lustre" loading="lazy"></figure>
-      <figure class="g6"><img src="img/wm-duo.jpg" alt="Dra. Érica e uma participante no jardim" loading="lazy"></figure>
-    </div>
-    <div class="wm-foot">
-      <p>As vagas são limitadas e as datas da próxima edição saem primeiro no Instagram e no WhatsApp.</p>
-      <a class="btn btn-line" href="https://wa.me/5521994596690?text=Ol%C3%A1!%20Gostaria%20de%20saber%20quando%20ser%C3%A1%20a%20pr%C3%B3xima%20edi%C3%A7%C3%A3o%20do%20Women%27s%20Meeting." target="_blank" rel="noopener">Avise-me da próxima edição <span class="arr" aria-hidden="true">→</span></a>
-    </div>
-  </div>
-</section>
-
-<section class="band" id="faq">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">Dúvidas frequentes</p>
-      <h2>Antes de dar o primeiro passo.</h2>
-    </div>
-    <div class="faq">
-      <details open><summary>Atende online?</summary><p>Sim. As sessões online acontecem por vídeo e têm a mesma estrutura do atendimento presencial no consultório, no Rio de Janeiro.</p></details>
-      <details><summary>Quanto tempo dura uma sessão?</summary><p>Em geral, 50 minutos. A frequência costuma ser semanal, mas é combinada com você de acordo com o momento.</p></details>
-      <details><summary>Tudo o que eu disser fica em sigilo?</summary><p>Sim. O sigilo é garantido pelo Código de Ética do Conselho Federal de Psicologia e é a base de qualquer processo terapêutico.</p></details>
-      <details><summary>Preciso estar em crise para procurar terapia?</summary><p>Não. Muita gente procura terapia porque quer entender padrões que se repetem nas relações, e não porque está no fundo do poço.</p></details>
-      <details><summary>Como funciona o pagamento?</summary><p>Atendimento particular. Valores e formas de pagamento são informados no primeiro contato pelo WhatsApp.</p></details>
-      <details><summary>O minicurso substitui a terapia?</summary><p>Não. O minicurso é um encontro de uma hora para reconhecer padrões de dependência emocional e sair com um primeiro passo prático. A terapia é um processo contínuo e individual.</p></details>
     </div>
   </div>
 </section>
@@ -525,15 +535,15 @@ footer .legal{border-top:1px solid var(--line);padding-block:16px;font-size:12.5
 <section class="band band-brown final" id="contato">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Agende a sua consulta</p>
-      <h2>Você não precisa continuar se perdendo.</h2>
-      <p class="lede">Mande uma mensagem. A Dra. Érica responde pessoalmente e combina com você o melhor horário, presencial ou online.</p>
+      <p class="eyebrow">Agende sua consulta</p>
+      <h2>Você tem cuidado de todo mundo. E de você?</h2>
+      <p class="lede">Sua história merece ser ouvida com respeito, atenção e sensibilidade. Se você enfrenta dificuldades emocionais, conflitos afetivos ou deseja compreender melhor seus relacionamentos, a psicoterapia pode ser um caminho. Atendimento on-line e presencial.</p>
     </div>
     <div class="contact">
       <p class="eyebrow">WhatsApp</p>
       <p class="num" id="phone">(21) 99459-6690</p>
       <div class="row">
-        <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1%2C%20Dra.%20%C3%89rica!%20Encontrei%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Abrir conversa <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-blue" href="https://wa.me/5521994596690?text=Ol%C3%A1%2C%20Dra.%20%C3%89rica!%20Encontrei%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Conversar pelo WhatsApp <span class="arr" aria-hidden="true">→</span></a>
         <button type="button" id="copyBtn">Copiar número</button>
         <a class="btn btn-line" href="https://www.instagram.com/draericarangelpsi/" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg>@draericarangelpsi</a>
       </div>
@@ -545,7 +555,7 @@ footer .legal{border-top:1px solid var(--line);padding-block:16px;font-size:12.5
   <div class="wrap">
     <div>
       <b>Érica Rangel</b>
-      <p>Psicóloga clínica · Psicóloga de Relacionamentos<br>CRP 05/56029 · Rio de Janeiro, RJ</p>
+      <p>Psicóloga clínica · CRP 05/56029<br>Psicologia dos Relacionamentos · Reconstrução Feminina · Saúde Emocional<br>Rio de Janeiro, RJ · Atendimento presencial e on-line</p>
     </div>
     <div>
       <b>Contato</b>
