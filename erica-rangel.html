@@ -8,7 +8,8 @@
 <meta property="og:title" content="Dra. Érica Rangel · Psicóloga de Relacionamentos">
 <meta property="og:description" content="Psicoterapia on-line com a Dra. Érica Rangel, psicóloga clínica. Relacionamentos abusivos, dependência emocional, reconstrução feminina, ansiedade e depressão.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://pedroguarnier.github.io/erica-rangel/">
+<meta property="og:url" content="https://www.ericarangel.com.br/">
+<link rel="canonical" href="https://www.ericarangel.com.br/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%237A5342%27/%3E%3Ctext x=%2732%27 y=%2744%27 text-anchor=%27middle%27 font-family=%27Georgia,serif%27 font-style=%27italic%27 font-size=%2734%27 fill=%27%23F5EEE5%27%3Eer%3C/text%3E%3C/svg%3E">
 <title>Dra. Érica Rangel</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -603,6 +604,46 @@ footer .legal{border-top:1px solid var(--line);padding-block:16px;font-size:12.5
       } else fallback();
     }catch(e){fallback();}
   });
+})();
+</script>
+
+<!-- Tags de anúncios. Preencha os IDs abaixo (só aqui) e tudo passa a disparar; sem IDs, nada é carregado. -->
+<script>
+window.ER_TAGS={
+  googleTag:'',      // Tag do Google: "AW-000000000" (Google Ads) e/ou "G-XXXXXXXXXX" (GA4), separados por vírgula
+  adsConversion:'',  // Ação de conversão do Google Ads, no formato "AW-000000000/AbCdEfGhIjKlMnOp"
+  metaPixel:''       // ID do Pixel da Meta (só números)
+};
+(function(){
+  var T=window.ER_TAGS||{};
+  var ids=String(T.googleTag||'').split(',').map(function(s){return s.trim();}).filter(Boolean);
+  if(ids.length){
+    var s=document.createElement('script'); s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(ids[0]); document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[]; window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
+    gtag('js',new Date()); ids.forEach(function(id){ gtag('config',id); });
+  }
+  if(T.metaPixel){
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init',String(T.metaPixel)); fbq('track','PageView');
+  }
+  // Qual serviço gerou o clique, pela mensagem pré-preenchida do WhatsApp
+  function service(a){
+    var t=''; try{ t=decodeURIComponent((a.getAttribute('href').split('text=')[1]||'')).toLowerCase(); }catch(e){}
+    if(t.indexOf('minicurso')>-1) return 'minicurso';
+    if(t.indexOf('women')>-1) return 'womens_meeting';
+    if(t.indexOf('on-line')>-1||t.indexOf('online')>-1) return 'psicoterapia_online';
+    return 'psicoterapia';
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target&&e.target.closest?e.target.closest('a[href^="https://wa.me/"]'):null; if(!a) return;
+    var svc=service(a), path=location.pathname;
+    if(window.gtag){
+      gtag('event','whatsapp_click',{service:svc,page_path:path});
+      if(T.adsConversion) gtag('event','conversion',{send_to:T.adsConversion,event_category:svc});
+    }
+    if(window.fbq){ fbq('track','Contact',{content_name:svc,content_category:'whatsapp'}); }
+  },true);
 })();
 </script>
 </body>
